@@ -32,6 +32,7 @@
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
@@ -359,6 +360,10 @@
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
   }
+  .text-8xl {
+    font-size: var(--text-8xl);
+    line-height: var(--tw-leading, var(--text-8xl--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -393,6 +398,12 @@
   }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
+  }
+  .text-\[52px\] {
+    font-size: 52px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -524,6 +535,11 @@
     @media (width >= 48rem) {
       font-size: 60px;
       line-height: calc(var(--spacing) * 15);
+    }
+  }
+  .md\:text-\[60px\] {
+    @media (width >= 48rem) {
+      font-size: 60px;
     }
   }
   .md\:text-\[150px\] {
