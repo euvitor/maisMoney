@@ -9,16 +9,16 @@
     <script src="../js/quizScript.js" defer></script>
 </head>
 
-<body class="flex flex-col h-screen text-stone-800 bg-stone-100">
-    <header class="flex justify-center mt-18 md:mt-30 mb-15 md:mb-20 z-1">
+<body class="flex flex-col h-screen bg-stone-100 text-stone-800">
+    <header class="flex justify-center mt-18 mb-15 z-1 md:mt-30 md:mb-20">
         <h1 class="flex items-center gap-2">
-            <p class="text-7xl md:text-[150px] tracking-[-0.3rem] md:tracking-[-0.5rem] font-bold">#2</p>
-            <p class="text-4xl/8 md:text-[60px]/15 font-bold">Descubra<br>seu perfil</p>
+            <p class="text-7xl font-bold tracking-[-0.3rem] md:text-[150px] md:tracking-[-0.5rem]">#2</p>
+            <p class="text-4xl/8 font-bold md:text-[60px]/15">Descubra<br>seu perfil</p>
         </h1>
     </header>
     <main class="grow">
         <div id="quizContainer" class="flex justify-center p-5 md:px-10">
-            <div id="quiz" class="md:w-3xl py-5 md:py-10 px-8 md:px-15 flex flex-col md:gap-6 borda-out-g rounded-xl">
+            <div id="quiz" class="flex flex-col py-5 px-8 borda-out-g rounded-xl md:w-3xl md:py-10 md:px-15 md:gap-6">
                 <!-- Página Inicial do Quiz -->
                 <div class="quiz-pages flex flex-col items-center gap-10 text-center">
                     <h1 class="text-4xl md:text-6xl">🐢 🐕 🐅</h1>
@@ -26,21 +26,25 @@
                     <p class="text-[18px]">
                         Responda algumas perguntas e veja se você é cauteloso como uma tartaruga, equilibrado como um golden retriever ou ousado como um tigre!
                     </p>
-                    <button id="quizStartButton" class="w-52 p-3 text-xl font-bold rounded-xl border-2 border-stone-300 borda-out-button">
+                    <button id="quizStartButton" class="w-52 p-3 text-xl font-bold rounded-xl border-4 border-stone-300 borda-out-button
+                     hover:border-orange-200 active:border-orange-300">
                         Vamos começar!
                     </button>
                 </div>
                 <!-- Questão 1 -->
                 <div style="display: none;" class="quiz-pages flex flex-col gap-10">
                     <h2 class="text-2xl font-bold">1. Qual é o seu principal objetivo ao investir?</h2>
-                    <div class="answers-container flex flex-col gap-5 items-center">
-                        <button data-points="1" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                    <div class="answers-container flex flex-col items-center gap-5">
+                        <button data-points="1" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             A) Proteger meu dinheiro e evitar surpresas.
                         </button>
-                        <button data-points="2" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="2" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             B) Equilibrar segurança com um bom retorno.
                         </button>
-                        <button data-points="3" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="3" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             C) Aproveitar oportunidades para fazer meu dinheiro crescer.
                         </button>
                     </div>
@@ -48,14 +52,17 @@
                 <!-- Questão 2 -->
                 <div style="display: none;" class="quiz-pages flex flex-col gap-10">
                     <h2 class="text-2xl font-bold">2. Como você reage quando percebe mudanças nos preços e oportunidades?</h2>
-                    <div class="answers-container flex flex-col gap-5 items-center">
-                        <button data-points="1" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                    <div class="answers-container flex flex-col items-center gap-5">
+                        <button data-points="1" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             A) Fico muito nervoso e penso em desistir.
                         </button>
-                        <button data-points="2" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="2" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             B) Fico atento e acompanho as mudanças sem pânico.
                         </button>
-                        <button data-points="3" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="3" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             C) Vejo as oportunidades e, se der certo, invisto com confiança.
                         </button>
                     </div>
@@ -63,14 +70,17 @@
                 <!-- Questão 3 -->
                 <div style="display: none;" class="quiz-pages flex flex-col gap-10">
                     <h2 class="text-2xl font-bold">3. Se surgisse um imprevisto, como você se sentiria?</h2>
-                    <div class="answers-container flex flex-col gap-5 items-center">
-                        <button data-points="1" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                    <div class="answers-container flex flex-col items-center gap-5">
+                        <button data-points="1" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             A) Preocupado – prefiro ter sempre uma reserva.
                         </button>
-                        <button data-points="2" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="2" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             B) Um pouco ansioso, mas consigo me ajustar.
                         </button>
-                        <button data-points="3" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="3" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             C) Animado – vejo imprevistos como desafios para melhorar.
                         </button>
                     </div>
@@ -78,14 +88,17 @@
                 <!-- Questão 4 -->
                 <div style="display: none;" class="quiz-pages flex flex-col gap-10">
                     <h2 class="text-2xl font-bold">4. Qual é o seu tempo de investimento?</h2>
-                    <div class="answers-container flex flex-col gap-5 items-center">
-                        <button data-points="1" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                    <div class="answers-container flex flex-col items-center gap-5">
+                        <button data-points="1" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             A) Curto prazo – quero ver resultados logo.
                         </button>
-                        <button data-points="2" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="2" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             B) Médio prazo – posso esperar um pouco para ver os resultados.
                         </button>
-                        <button data-points="3" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="3" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             C) Longo prazo – estou preparado para investir a longo prazo.
                         </button>
                     </div>
@@ -93,14 +106,17 @@
                 <!-- Questão 5 -->
                 <div style="display: none;" class="quiz-pages flex flex-col gap-10">
                     <h2 class="text-2xl font-bold">5. Quando surge uma oportunidade interessante, como você age?</h2>
-                    <div class="answers-container flex flex-col gap-5 items-center">
-                        <button data-points="1" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                    <div class="answers-container flex flex-col items-center gap-5">
+                        <button data-points="1" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             A) Prefiro analisar tudo com calma antes de decidir.
                         </button>
-                        <button data-points="2" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="2" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             B) Avalio os riscos e invisto com cautela se fizer sentido.
                         </button>
-                        <button data-points="3" class="answer py-3 px-5 md:w-xl text-[18px] text-left font-medium rounded-xl border-2 border-stone-300 borda-out-button">
+                        <button data-points="3" class="answer py-3 px-5 text-[18px] text-left font-medium rounded-xl border-4 border-stone-300 borda-out-button 
+                        hover:border-orange-200 active:border-orange-300 md:w-xl">
                             C) Se a oportunidade parece boa, eu invisto sem pensar duas vezes!
                         </button>
                     </div>
@@ -125,7 +141,8 @@
         </div>
         <div id="bottomNavContainer" style="display: none;" class="flex justify-center">
             <a href="./investimento.html">
-                <div class="w-2xs p-5 borda-out rounded-xl mb-7 font-bold">
+                <div class="w-2xs p-5 mb-7 font-bold rounded-xl borda-out bg-stone-100 
+                hover:bg-purple-200 active:bg-purple-300 transition duration-300 delay-100 ease-in-out">
                     <p>Próximo passo:</p>
                     <div class="place-self-center flex items-center gap-2">
                         <p class="text-[52px] tracking-[-0.2rem]">#3</p>
@@ -136,7 +153,7 @@
         </div>
     </main>
     <footer class="p-5">
-        <p class="text-center text-sm md:text-lg font-bold">
+        <p class="text-center text-sm font-bold md:text-lg">
             Criado por Vitor Santos - um apaixonado por tecnologia e finanças. <a href="./sobre.html"><u>Estou aqui!</u></a>
         </p>
     </footer>

@@ -12,47 +12,53 @@
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
 
-<body class="flex flex-col h-screen text-stone-800 bg-stone-100">
-    <header class="mt-20 md:mt-30 mb-8 p-5 md:px-50 flex flex-col items-center gap-7 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold">Transforme seu dinheiro em oportunidades!</h1>
+<body class="flex flex-col h-screen bg-stone-100 text-stone-800">
+    <header class="flex flex-col items-center mt-20 mb-8 p-5 gap-7 text-center md:mt-30 md:px-50">
+        <h1 class="text-4xl font-bold md:text-6xl">Transforme seu dinheiro em oportunidades!</h1>
         <h3 class="text-xl md:text-2xl">
             Descubra como 3 passos simples podem te ajudar a construir um futuro brilhante.
         </h3>
     </header>
+
     <main class="grow">
-        <div id="cardsContainer" class="flex flex-col md:flex-row items-center md:justify-center gap-8">
+        <div id="cardsContainer" class="flex flex-col items-center gap-8 md:flex-row md:justify-center">
             <a href="./src/pages/reserva.html">
-                <div class="flex flex-col gap-5 cards borda-out p-5 max-w-3xs h-80 rounded-xl">
-                    <h3 class="font-bold text-2xl">#1 <br> Crie sua Reserva</h3>
-                    <p class="text-lg">
-                        Seja estudante, CLT ou já iniciando sua jornada, aprenda a separar um dinheirinho para
-                        emergências e grandes sonhos!
-                    </p>
+                <div class="flex flex-col p-5 gap-5 max-w-2xs h-80 rounded-xl borda-out 
+                            text-lg transition duration-300 delay-100 ease-in-out 
+                            hover:bg-emerald-200 active:bg-emerald-300 active:duration-100">
+                    <h3 class="text-2xl font-bold">#1 <br> Crie sua Reserva</h3>
+                    <p>Seja estudante, CLT ou já iniciando sua jornada, aprenda a separar um dinheirinho para
+                        emergências e grandes sonhos!</p>
                 </div>
             </a>
+
             <a href="./src/pages/perfil.html">
-                <div class="flex flex-col gap-5 cards borda-out p-5 max-w-3xs h-80 rounded-xl">
-                    <h3 class="font-bold text-2xl">#2 <br> Descubra seu Perfil</h3>
-                    <p class="text-lg">
-                        Cada investidor é único! Responda nosso quiz e veja se você é cauteloso como uma tartaruga,
-                        equilibrado como um golden retriever ou destemido como um leão.
-                    </p>
+                <div class="flex flex-col p-5 gap-5 max-w-2xs h-80 rounded-xl borda-out 
+                            text-lg transition duration-300 delay-100 ease-in-out 
+                            hover:bg-orange-200 active:bg-orange-300">
+                    <h3 class="text-2xl font-bold">#2 <br> Descubra seu Perfil</h3>
+                    <p>Cada investidor é único! Responda nosso quiz e veja se você é cauteloso como uma tartaruga,
+                        equilibrado como um golden retriever ou destemido como um leão.</p>
                 </div>
             </a>
+
             <a href="./src/pages/investimento.html">
-                <div class="flex flex-col gap-5 cards borda-out p-5 max-w-3xs h-80 rounded-xl">
-                    <h3 class="font-bold text-2xl">#3 <br> Comece a Investir</h3>
-                    <p class="text-lg">
-                        Descubra dicas e estratégias para fazer seu dinheiro crescer. Mesmo que esteja começando
-                        pequeno, cada centavo pode virar uma grande oportunidade!
-                    </p>
+                <div class="flex flex-col p-5 gap-5 max-w-2xs h-80 rounded-xl borda-out 
+                            text-lg transition duration-300 delay-100 ease-in-out 
+                            hover:bg-purple-200 active:bg-purple-300 active:duration-100">
+                    <h3 class="text-2xl font-bold">#3 <br> Comece a Investir</h3>
+                    <p>Descubra dicas e estratégias para fazer seu dinheiro crescer. Mesmo que esteja começando pequeno,
+                        cada centavo pode virar uma grande oportunidade!</p>
                 </div>
             </a>
         </div>
     </main>
+
     <footer class="p-5 mt-10">
-        <p class="text-center text-sm md:text-lg font-bold">Criado por Vitor Santos - um entusiasta de tecnologia e
-            finanças. <a href="./src/pages/sobre.html"><u>Estou aqui!.</u></a></p>
+        <p class="text-center text-sm font-bold md:text-lg">
+            Criado por Vitor Santos - um entusiasta de tecnologia e finanças.
+            <a href="./src/pages/sobre.html"><u>Estou aqui!</u></a>
+        </p>
     </footer>
 </body>
 
